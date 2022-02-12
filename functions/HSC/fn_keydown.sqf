@@ -67,6 +67,13 @@ _allowed pushBack (actionKeys "compass");
 if({_dikCode in _x} count _allowed > 0) then {
 	_handled = false;
 };
+
+if (_handled) then {
+    _handled = call cba_events_fnc_keyHandlerDown;
+};
+
+_handled;
+
 if(_dikCode in (actionKeys "nightVision")) then {
 	call ATHSC_fnc_toggleNV;
 };
