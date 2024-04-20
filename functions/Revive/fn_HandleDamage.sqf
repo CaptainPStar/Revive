@@ -1,4 +1,3 @@
-//params["_unit","_bodyPart","_amountOfDamage","_killer","_projectile","_context"];
 params ["_unit", "_bodyPart", "_amountOfDamage", "_killer", "_projectile", "_hitIndex", "_instigator", "_hitPoint", "_directHit", "_context"];
 
 if (_unit getVariable ["AT_Revive_isUnconscious", false]) then {
