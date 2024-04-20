@@ -12,8 +12,8 @@ if (_unit getVariable ["AT_Revive_isUnconscious", false]) then {
 		_amountOfDamage = 0;
 		_unit setDamage 0;
 		_unit allowDamage false;
+		[_unit, _killer, _projectile] call ATR_FNC_BroadcastKill;
 		[_unit] call ATR_FNC_Unconscious;
-		[_unit, _killer, _projectile] spawn ATR_FNC_BroadcastKill;
 	};
 };
 
